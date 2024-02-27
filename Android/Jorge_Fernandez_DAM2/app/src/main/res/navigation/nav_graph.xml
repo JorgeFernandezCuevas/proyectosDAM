@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registroFragment">
+
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.jorge_fernandez_dam2.fragments.RegistroFragment"
+        android:label="RegistroFragment"
+        tools:layout="@layout/fragment_registro"
+        >
+
+
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.jorge_fernandez_dam2.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"
+
+        >
+        <argument
+            android:name="perfil"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.jorge_fernandez_dam2.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"
+        >
+        <argument
+            android:name="perfil"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
