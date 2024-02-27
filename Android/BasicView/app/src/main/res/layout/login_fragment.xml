@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagen_usuario"
+            android:layout_width="239dp"
+            android:layout_height="220dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/si"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_margin="50dp"
+            android:id="@+id/nombre_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/introduce_tu_nombre"
+            app:layout_constraintEnd_toEndOf="@+id/imagen_usuario"
+            app:layout_constraintStart_toStartOf="@+id/imagen_usuario"
+            app:layout_constraintTop_toBottomOf="@+id/imagen_usuario" />
+
+        <EditText
+            android:id="@+id/pass_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/introduce_tu_pass"
+            app:layout_constraintEnd_toEndOf="@+id/nombre_usuario"
+            app:layout_constraintStart_toStartOf="@+id/nombre_usuario"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_usuario" />
+
+        <Button
+            android:id="@+id/boton_inicio"
+            android:layout_width="151dp"
+            android:layout_margin="10dp"
+            android:layout_height="42dp"
+            android:text="@string/inicio"
+            app:layout_constraintEnd_toEndOf="@+id/pass_usuario"
+            app:layout_constraintStart_toStartOf="@+id/pass_usuario"
+            app:layout_constraintTop_toBottomOf="@+id/pass_usuario" />
+
+        <Button
+            android:id="@+id/boton_registrar"
+            android:layout_width="151dp"
+            android:layout_height="42dp"
+            android:layout_margin="10dp"
+            android:text="@string/registrar"
+            app:layout_constraintEnd_toEndOf="@+id/boton_inicio"
+            app:layout_constraintStart_toStartOf="@+id/boton_inicio"
+            app:layout_constraintTop_toBottomOf="@+id/boton_inicio" />
+
+        <Button
+            android:id="@+id/boton_invitado"
+            android:layout_width="151dp"
+            android:layout_height="42dp"
+            android:layout_margin="10dp"
+            android:text="@string/invitado"
+            app:layout_constraintEnd_toEndOf="@+id/boton_registrar"
+            app:layout_constraintStart_toStartOf="@+id/boton_registrar"
+            app:layout_constraintTop_toBottomOf="@+id/boton_registrar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

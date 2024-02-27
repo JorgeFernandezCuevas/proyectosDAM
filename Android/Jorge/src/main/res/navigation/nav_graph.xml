@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.jorge_fernandezcuevas_dam2.ui.fragments.FragmentLogin"
+        android:label="FragmentLogin"
+        tools:layout="@layout/login_fragment">
+
+
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.jorge_fernandezcuevas_dam2.ui.fragments.FragmentMain"
+        android:label="FragmentMain"
+        tools:layout="@layout/main_fragment">
+
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

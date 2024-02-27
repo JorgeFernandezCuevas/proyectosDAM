@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_toolbar"
+        />
+
+    <EditText
+        android:id="@+id/id_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Introdice el id del producto:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/nombre_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Introdice el nombre del producto:"
+        app:layout_constraintEnd_toEndOf="@+id/id_producto"
+        app:layout_constraintStart_toStartOf="@+id/id_producto"
+        app:layout_constraintTop_toBottomOf="@+id/id_producto" />
+
+    <EditText
+        android:id="@+id/precio_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Introdice el precio del producto:"
+        app:layout_constraintEnd_toEndOf="@+id/nombre_producto"
+        app:layout_constraintStart_toStartOf="@+id/nombre_producto"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_producto" />
+
+    <Spinner
+        android:id="@+id/categorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:entries="@array/categorias"
+        app:layout_constraintEnd_toEndOf="@+id/precio_producto"
+        app:layout_constraintStart_toStartOf="@+id/precio_producto"
+        app:layout_constraintTop_toBottomOf="@+id/precio_producto" />
+    <EditText
+        android:id="@+id/stock_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Introdice el stock del producto:"
+        app:layout_constraintEnd_toEndOf="@+id/categorias"
+        app:layout_constraintStart_toStartOf="@+id/categorias"
+        app:layout_constraintTop_toBottomOf="@+id/categorias" />
+    <EditText
+        android:id="@+id/desc_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Introdice la descripcion del producto:"
+        app:layout_constraintEnd_toEndOf="@+id/stock_producto"
+        app:layout_constraintStart_toStartOf="@+id/stock_producto"
+        app:layout_constraintTop_toBottomOf="@+id/stock_producto" />
+
+    <RadioGroup
+        android:id="@+id/grupo_radios"
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/desc_producto"
+        app:layout_constraintTop_toBottomOf="@+id/desc_producto">
+
+        <RadioButton
+            android:id="@+id/radio_paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paypal" />
+
+        <RadioButton
+            android:id="@+id/radio_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarjeta" />
+    </RadioGroup>
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/boton_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="@+id/desc_producto"
+        app:layout_constraintTop_toBottomOf="@id/grupo_radios"
+        app:layout_constraintStart_toStartOf="@+id/categorias"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

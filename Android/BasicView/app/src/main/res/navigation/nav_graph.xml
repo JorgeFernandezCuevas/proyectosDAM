@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.t6_navegation.ui.fragment.LoginFragment"
+        android:label="Inicar sesion"
+        tools:layout="@layout/login_fragment"
+        >
+        <action
+            android:id="@+id/action_loginFragment_to_singinFragment"
+            app:destination="@id/singinFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singinFragment"
+        android:name="com.example.t6_navegation.ui.fragment.SinginFragment"
+        android:label="Crear cuenta"
+        tools:layout="@layout/sing_fragment"
+
+        >
+        <action
+            android:id="@+id/action_singinFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_singinFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.t6_navegation.ui.fragment.MainFragment"
+        android:label="Pantalla Principal"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentDetail"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.example.t6_navegation.ui.fragment.FragmentDetail"
+        android:label="FragmentDetail"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="producto"
+            app:argType="com.example.t6_navegation.model.Producto" />
+    </fragment>
+</navigation>

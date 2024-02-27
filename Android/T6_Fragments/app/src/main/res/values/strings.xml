@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">T6_Fragments</string>
+    <string name="fragmentdos">FragmentDos</string>
+    <string name="fragmentuno">FragmentUno</string>
+</resources>

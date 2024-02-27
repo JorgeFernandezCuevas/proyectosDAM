@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "511059431626",
+    "project_id": "jfc-ces",
+    "storage_bucket": "jfc-ces.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511059431626:android:94d27a831eb15cee9ce433",
+        "android_client_info": {
+          "package_name": "com.example.t6_navegation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM-5E94wat8wQqd8HLuvPPNburet_e8xA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

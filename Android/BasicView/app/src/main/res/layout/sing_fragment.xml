@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registro"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/crear_nombre"
+            android:layout_margin="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/introduce_tu_nombre"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/crear_apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:hint="@string/introduce_tu_apellido"
+            app:layout_constraintEnd_toEndOf="@+id/crear_nombre"
+            app:layout_constraintStart_toStartOf="@+id/crear_nombre"
+            app:layout_constraintTop_toBottomOf="@+id/crear_nombre" />
+
+        <EditText
+            android:id="@+id/crear_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:hint="Introduce tu correo"
+            app:layout_constraintEnd_toEndOf="@+id/crear_apellido"
+            app:layout_constraintStart_toStartOf="@+id/crear_apellido"
+            app:layout_constraintTop_toBottomOf="@+id/crear_apellido" />
+
+        <EditText
+            android:id="@+id/crear_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:hint="@string/introduce_una_pass"
+            app:layout_constraintEnd_toEndOf="@+id/crear_correo"
+            app:layout_constraintStart_toStartOf="@+id/crear_correo"
+            app:layout_constraintTop_toBottomOf="@+id/crear_correo" />
+
+        <EditText
+            android:id="@+id/confirmar_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:hint="Confirma tu pass"
+            app:layout_constraintEnd_toEndOf="@+id/crear_pass"
+            app:layout_constraintStart_toStartOf="@+id/crear_pass"
+            app:layout_constraintTop_toBottomOf="@+id/crear_pass" />
+
+        <EditText
+            android:id="@+id/crear_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:hint="Introduce tu direccion"
+            app:layout_constraintEnd_toEndOf="@+id/confirmar_pass"
+            app:layout_constraintStart_toStartOf="@+id/confirmar_pass"
+            app:layout_constraintTop_toBottomOf="@+id/confirmar_pass" />
+
+        <Button
+            android:id="@+id/boton_crear"
+            android:layout_width="213dp"
+            android:layout_height="47dp"
+            android:layout_margin="30dp"
+            android:text="@string/crear_usuario"
+            app:layout_constraintEnd_toEndOf="@+id/crear_direccion"
+            app:layout_constraintStart_toStartOf="@+id/crear_direccion"
+            app:layout_constraintTop_toBottomOf="@+id/crear_direccion" />
+
+        <Button
+            android:id="@+id/boton_crear_iniciar"
+            android:layout_width="213dp"
+            android:layout_height="47dp"
+            android:layout_margin="30dp"
+            android:text="Crear y iniciar"
+            app:layout_constraintEnd_toEndOf="@+id/boton_crear"
+            app:layout_constraintStart_toStartOf="@+id/boton_crear"
+            app:layout_constraintTop_toBottomOf="@+id/boton_crear" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
