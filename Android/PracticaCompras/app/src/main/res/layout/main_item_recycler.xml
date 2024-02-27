@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView
+        android:id="@+id/imagen_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre_prodcto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton_detalle"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:text="@string/detalle"
+        app:layout_constraintEnd_toEndOf="@+id/nombre_prodcto"
+        app:layout_constraintStart_toStartOf="@+id/nombre_prodcto"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_prodcto" />
+
+    <Button
+        android:id="@+id/boton_comprar"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:text="@string/comprar"
+        app:layout_constraintEnd_toEndOf="@+id/boton_detalle"
+        app:layout_constraintStart_toStartOf="@+id/boton_detalle"
+        app:layout_constraintTop_toBottomOf="@+id/boton_detalle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

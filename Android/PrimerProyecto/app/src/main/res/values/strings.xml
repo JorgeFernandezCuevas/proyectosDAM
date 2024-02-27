@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">T4_Json</string>
+    <string name="filtrar">FILTRAR</string>
+    <string name="genero">Genero</string>
+    <string name="genero2">Genero:</string>
+    <string name="numero">Numero:</string>
+    <string name="filtrar2">Filtrar</string>
+    <string-array name="generos">
+        <item>male</item>
+        <item>female</item>
+        <item>all</item>
+    </string-array>
+    <string-array name="nacionalidades">
+        <item>us</item>
+        <item>dk</item>
+        <item>fr</item>
+        <item>gb</item>
+        <item>es</item>
+    </string-array>
+</resources>

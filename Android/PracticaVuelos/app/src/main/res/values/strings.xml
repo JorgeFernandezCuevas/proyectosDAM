@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vuelos</string>
+    <string name="salida">Salida</string>
+    <string name="hora_salida">Hora salida</string>
+    <string name="regreso">Regreso</string>
+    <string name="hora_vuelta">Hora vuelta</string>
+    <string name="solo_ida">Solo ida</string>
+    <string name="agregar_viaje">Agregar viaje</string>
+    <string name="ver_detalles">Ver detalles</string>
+</resources>

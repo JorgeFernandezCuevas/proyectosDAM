@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Compras</string>
+    <string name="detalle">Detalle</string>
+    <string name="comprar">Comprar</string>
+    <string name="_te">COMPRAR</string>
+    <string name="eliminar">Eliminar</string>
+</resources>
